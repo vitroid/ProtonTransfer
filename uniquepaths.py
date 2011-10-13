@@ -12,7 +12,7 @@ for line in sys.stdin:
        last = columns[-1]
        columns = columns[3:-1]
        if not last in columns:
-           print depth,last
+           #print depth,last
            if not paths.has_key(last):
                paths[last] = [0]*(dmax+1)
            paths[last][depth] += 1
